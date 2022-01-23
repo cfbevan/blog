@@ -1,0 +1,80 @@
+@import "nib"
+@import "_variables"
+@import "_util/mixin"
+@import "_util/grid"
+
+global-reset()
+
+body {
+    background-color: color-background;
+    color: color-default;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Menlo", "Meslo LG", monospace;
+    line-height: 1.725;
+    text-rendering: geometricPrecision;
+}
+
+a {
+    color: color-link;
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    color: color-link-hover;
+    text-decoration: underline;
+}
+
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    color: color-footer;
+}
+
+.clear {
+    clear: both;
+}
+
+.navdiv {
+    width: 100%;
+}
+
+.hd {
+    width: 650px;
+    height: 100%;
+    margin: auto;
+}
+
+@import "_extend"
+@import "_partial/index"
+@import "_partial/nav"
+@import "_partial/post"
+@import "_partial/markdown"
+@import "_partial/highlight"
+
+@media screen and (max-width: 800px) {
+    .hd {
+        width: 90%;
+        margin: auto;
+    }
+
+    .posts .replay-btn{
+        display: none;
+    }
+
+    .posttime{
+        display: none;
+    }
+
+    .posts .post-title {
+        font-size: 16px;
+    }
+
+    .postname {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}

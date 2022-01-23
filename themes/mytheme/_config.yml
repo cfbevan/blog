@@ -1,0 +1,17 @@
+logo_title: PXL_3CF
+
+favicon: /favicon.ico
+
+menu:
+  Home: /
+  Links: /about
+  Github: https://github.com/cfbevan
+
+# Mermaid
+# https://github.com/webappdevelp/hexo-filter-mermaid-diagrams
+# mermaid chart
+mermaid: ## mermaid url https://github.com/knsv/mermaid
+  enable: true  # default true
+  version: "7.1.2" # default v7.1.2
+  options:  # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
+    #startOnload: true  // default true
